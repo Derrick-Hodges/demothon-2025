@@ -1,1 +1,11 @@
-
+set-title Outage Manager
+  cd /home/ec2-user/sdkperf/sdkperf-jms-8.4.17.5
+  export SOLACE_VM_ARGS="-javaagent:lib/opentelemetry-javaagent-2.8.0.jar -Dotel.javaagent.extensions=lib/solace-opentelemetry-jms-integration-1.1.0.jar -Dotel.traces.exporter=otlp -Dotel.metrics.exporter=none -Dotel.instrumentation.jms.enabled=true -Dotel.javaagent.debug=false -Dotel.propagators=solace_jms_tracecontext -Dotel.resource.attributes=service.name=Outage.Manager -Dotel.exporter.otlp.endpoint=https://otlp.nr-data.net:4317 -Dotel.exporter.otlp.headers=api-key=aed36c965ffc07b79fb8000b2e7acf05f3a5NRAL -Dotel.bsp.schedule.delay=500 -Dotel.bsp.max.queue.size=1000 -Dotel.bsp.max.export.batch.size=5 -Dotel.bsp.export.timeout=10000"; ./sdkperf_jms.sh -cip=  -cu=  -cp= -sql=q.outageManager -md -q  -nmpr 1 -pormt persistent -portl service/notification/alarm/12345
+  
+  set-title Resource Manager
+  cd /home/ec2-user/sdkperf/sdkperf-rest-8.4.13.6
+  ./sdkperf_rest.sh -spl=3000 -md -q
+  
+  set-title Customer Experience
+  
+ export SOLACE_VM_ARGS="-javaagent:lib/opentelemetry-javaagent-2.8.0.jar -Dotel.javaagent.extensions=lib/solace-opentelemetry-jms-integration-1.1.0.jar -Dotel.traces.exporter=otlp -Dotel.metrics.exporter=none -Dotel.instrumentation.jms.enabled=true -Dotel.javaagent.debug=false -Dotel.propagators=solace_jms_tracecontext -Dotel.resource.attributes=service.name=CustomerEx.Manager -Dotel.exporter.otlp.endpoint=https://otlp.nr-data.net:4317 -Dotel.exporter.otlp.headers=api-key=aed36c965ffc07b79fb8000b2e7acf05f3a5NRAL -Dotel.bsp.schedule.delay=500 -Dotel.bsp.max.queue.size=1000 -Dotel.bsp.max.export.batch.size=5 -Dotel.bsp.export.timeout=10000"; ./sdkperf_jms.sh -cip=tcp://mr-connection-2w8jtkix8fe.messaging.solace.cloud:55555  -cu=  -cp= -sql= -md -q
