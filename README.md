@@ -2,13 +2,17 @@
 ## Artifacts for demothon 2025
 A demo should position the full Solace platform as a set of valuable capabilities and should demonstrate the experience of user personas. It should also be alinged to those capabilities and messages in the MGI pitch.  It's also important to pick a use case that is relevant to the audience. This underlines the imprtance of thorough dicovery questioning prior to the demo.
 
+![image](https://github.com/user-attachments/assets/58e6a90c-e985-4b5f-bf76-e38903d44f53)
+
+
 To ensure the demo is relaistic the user should leverage public domain respositories for process and semantic alignment to relevant industry.
-[!TIP]
-Examples are
-TMForum - Telco
-BIAN - Banking
-ISA-95 - Industrial processing
-Local reserve bank - retail banking initiatives such as Payments
+
+>[!Note]     
+> Examples are
+> - TMForum - Telco
+> - BIAN - Banking
+> - ISA-95 - Industrial processing
+> - Local reserve bank - retail banking initiatives such as Payments
 
 There are many more and all are useful.
 
@@ -23,9 +27,18 @@ This repository is used to create Solace NGI demos based on business use case th
 7. Distributed Tracing using OTEL compatible monitoring tool e.e New Relic
 
 ## Pre-requisites
+- Solace Cloud account with at least 1 service
+- Dt allocation to Solace Account, configured and deployed
 - Sample messages
 - sdkperf JMS version (using auto instrumentation)
 - optional collector (for sdkperf)
+- scene setting slide
+
+### Example slide to insto the demo
+
+![image](https://github.com/user-attachments/assets/75b50af9-4add-4895-bd78-4f3e218cb1de)
+
+
 
 ## Methodology
 To build a demo the user would follow the process detailed below
@@ -41,13 +54,20 @@ Use EP to model a realistic Topic Hierarchy and model flows to match the use cas
 ### Deploy
 Once modelling is complete deploy to runtime. 
 
-[!NOTE]
-Python script being developed to automate this
+> [!Note]
+> Python script being developed to automate this
 
 ### Config
 Using the sample scripts adapt to the use case. The following parameters will be required
-1. service.name=<service name of micro servce>
+1. service.name=\<service name of micro servce\>
+2. connection parameters=\<conenction to PubSub+ Services/>
+3. other sdkperf parameters
+
+> [!Note]
+> The demo will run on a single node or multi node event mesh
+
+#### Simulation tools
+The primary simulation tool is sdkperf. The reason for this is the sdkperf feature 'publish on receive'. This specifically allows the simulated microservices to read messages and subsequently publish messages int he same trace. This leads to much more realistic and interesting traces when demo'ing the DT trace.
+If HTTP requests are relevant to the demo I have also used Postman and even curl
 
 
-
-## Simulation tools
