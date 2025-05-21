@@ -1,0 +1,1 @@
+[{ "value": "Offered", "description": "Offered" },{ "value": "Confirmed", "description": "Confirmed" },{ "value": "Completed", "description": "Completed" },{ "value": "Signed", "description": "Signed" },{ "value": "Terminated", "description": "Terminated" },{ "value": "Rejected", "description": "Rejected" }]
