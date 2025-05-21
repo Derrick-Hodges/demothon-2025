@@ -1,1 +1,0 @@
-[{"value":"CA","description":"CurrentAccountAgreement"},{"value":"SA","description":"SavingsAccountAgreement"},{"value":"BP","description":"BrokeredProductAgreement"},{"value":"CL","description":"ConsumerLoanAgreement"},{"value":"ML","description":"MortgageLoanAgreement"},{"value":"DDS","description":"DirectDebitServiceAgreement"}]

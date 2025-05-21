@@ -1,1 +1,0 @@
-[{ "value": "AI", "description": "Agreement Involvement" },{ "value": "PI", "description": "Party Involvement" },{ "value": "ArI", "description": "Arrangement Involvement" },{ "value": "RI", "description": "Relationship Involvement" },{ "value": "LI", "description": "Location Involvement" },{ "value": "BGI", "description": "Bankguarantee Involvement" }]
