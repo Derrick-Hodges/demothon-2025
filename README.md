@@ -1,6 +1,13 @@
 # demothon-2025
-## Artifacts for demothon 2025
-A demo should position the full Solace platform as a set of valuable capabilities and should demonstrate the experience of user personas. It should also be alinged to those capabilities and messages in the MGI pitch.  It's also important to pick a use case that is relevant to the audience. This underlines the imprtance of thorough dicovery questioning prior to the demo.
+# Artifacts for demothon 2025
+
+## Pretext
+>[!Note]
+> Teach your grandmother to suck eggs: Emerging sometime in the 1700s, and less commonly used today, this phrase intimates that a person might be "presuming to teach someone something that he or she knows already,"
+> ![image](https://github.com/user-attachments/assets/6677dbb4-a612-40be-9044-4aeabebcffc9)
+
+## Introduction
+A Solace demo is a precious opportunity to position the full Solace platform as a set of valuable capabilities and should demonstrate the experience of user personas. It should also be alinged to those capabilities and messages in the MGI pitch.  It's also important to pick a use case that is relevant to the audience. This underlines the imprtance of thorough dicovery questioning prior to the demo. No canned demo's!
 
 ![image](https://github.com/user-attachments/assets/58e6a90c-e985-4b5f-bf76-e38903d44f53)
 
