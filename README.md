@@ -41,7 +41,7 @@ This repository is used to create Solace NGI demos based on business use case th
 - optional collector (for sdkperf)
 - scene setting slide
 
-### Example slide to insto the demo
+### Example slide to set context for the demo
 
 ![image](https://github.com/user-attachments/assets/75b50af9-4add-4895-bd78-4f3e218cb1de)
 
